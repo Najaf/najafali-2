@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+article {
+  max-width: 600px;
+  margin: 0 auto 0 auto;
+  line-height: 1.5em;
+  font-family: arial;
+  font-size: 1.2em;
+}
