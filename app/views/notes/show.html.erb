@@ -1,0 +1,7 @@
+<article>
+  <h1><%= @note.title %></h1>
+
+  <section>
+    <%= @markdown.render(@note.body).html_safe %>
+  </section>
+</article>
