@@ -1,5 +1,9 @@
 <article>
-  <h1><%= @note.title %></h1>
+  <h2><%= @note.title %></h2>
+
+  <em>
+    <%= @note.publish_date.strftime("%B %Y") %>
+  </em>
 
   <section>
     <%= @markdown.render(@note.body).html_safe %>
