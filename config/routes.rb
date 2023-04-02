@@ -3,5 +3,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "pages#home"
+  get "notes/rss"
   resources :notes, only: [:show, :index]
 end

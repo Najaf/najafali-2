@@ -34,4 +34,8 @@ module NotesHelper
   def publish_date
     @note.publish_date.strftime("%B %Y")
   end
+
+  def cdata(content)
+    '<![CDATA[ ' + content + ' ]]>'
+  end
 end
