@@ -5,6 +5,6 @@ class NotesController < ApplicationController
 
   def show
     @note = Article.find_by(slug: params[:id]).load.first
-    @markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
+    @markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, { fenced_code_blocks: true })
   end
 end
