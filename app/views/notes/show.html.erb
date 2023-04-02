@@ -2,10 +2,16 @@
   <h2><%= @note.title %></h2>
 
   <em>
-    <%= @note.publish_date.strftime("%B %Y") %>
+    <%= publish_date %>,
+    <%= word_count %> words
   </em>
 
   <section>
-    <%= @markdown.render(@note.body).html_safe %>
+    <% if show_contents? %>
+      <h3>Contents</h3>
+        <%= table_of_contents %>
+      <hr />
+    <% end %>
+    <%= rendered_body %>
   </section>
 </article>
