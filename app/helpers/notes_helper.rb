@@ -36,6 +36,6 @@ module NotesHelper
   end
 
   def cdata(content)
-    '<![CDATA[ ' + content + ' ]]>'.html_safe
+    ('<![CDATA[ ' + content + ' ]]>').html_safe
   end
 end
