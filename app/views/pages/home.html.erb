@@ -1,28 +1,30 @@
-
 <article>
 <h1>Najaf Ali's Homepage</h1>
 
-<p>👋🏾 I'm a British immigrant to Japan. I live in Japan because I like it here more than anywhere else.</p>
+  <section>
+  <%= render 'shared/nav' %>
 
-<!--<p>I speak fluent Japanese, well enough that my code switch is fast and easy, and I can use circumlocution and other tactics to survive in any conversation. I learned Japanese primarily by drinking with Japanese people. I try to cook but mostly end up eating out, so probably know Sendai's restaurants better than most natives here.</p>-->
+  <p>👋🏾 I'm a British immigrant to Japan. I live in Japan because I like it here more than anywhere else.</p>
 
-<p>I was born in the UK and moved around to a number of different countries, before graduating and going to Japan for the first time on the JET programme in 2006. After a ten year break in the UK where I founded a software development consultancy and had a couple of children, I moved back to Japan in August 2018.</p>
+  <!--<p>I speak fluent Japanese, well enough that my code switch is fast and easy, and I can use circumlocution and other tactics to survive in any conversation. I learned Japanese primarily by drinking with Japanese people. I try to cook but mostly end up eating out, so probably know Sendai's restaurants better than most natives here.</p>-->
 
-<p>My big career goals are to make an income online by producing content and eventually software. I've been a web application developer, technical lead, CTO, and development manager for the best part of my career.</p>
+  <p>I was born in the UK and moved around to a number of different countries, before graduating and going to Japan for the first time on the JET programme in 2006. After a ten year break in the UK where I founded a software development consultancy and had a couple of children, I moved back to Japan in August 2018.</p>
 
-<h2>📝 Notes</h2>
 
-<p>Here are some notes and words I write.</p>
+  <h2>📝 Notes</h2>
 
-<ul>
-  <% @articles.each do |article| %>
-    <li>
-      <%= link_to article.title, note_path(article.slug) %>
-    </li>
-  <% end %>
-</ul>
+  <p>Here are some things I wrote recently:</p>
 
-<p>
-See <%= link_to "a big list of all the notes", notes_path %>
-</p>
+  <ul>
+    <% @articles.each do |article| %>
+      <li>
+        <%= link_to article.title, note_path(article.slug), style: 'text-decoration: none' %>
+      </li>
+    <% end %>
+  </ul>
+
+  <p>
+  See <%= link_to "a big list of all the notes", notes_path %>
+  </p>
+  </section>
 </article>
