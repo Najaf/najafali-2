@@ -21,12 +21,20 @@ body {
 article {
   max-width: 660px;
   margin: 0 auto 0 auto;
-  line-height: 1.5em;
+  line-height: 1.8rem;
   font-size: 1.2em;
   color: #ddd;
 }
 
+article li {
+  line-height: 1.8;
+}
+
 article h1 {
+}
+
+hr {
+  border-color: #404040;
 }
 
 .note-title {
@@ -44,7 +52,9 @@ body {
 }
 
 img {
-  width: 100%;
+  width: 110%;
+  margin-left: -5%;
+  border-radius: 6px;
 }
 
 a {
@@ -61,4 +71,15 @@ section a {
 
 li::marker {
   color: #525252
+}
+
+article pre {
+  display: block;
+  margin-left: -2em;
+  margin-right: -2em;
+  overflow-x: auto;
+  border-radius: 6px;
+}
+article pre code {
+  padding: 2em;
 }

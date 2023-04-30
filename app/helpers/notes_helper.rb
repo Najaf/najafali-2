@@ -5,7 +5,7 @@ module NotesHelper
 
   def markdown
     Redcarpet::Markdown.new(markdown_renderer,
-      {fenced_cod_blocks: true}
+      {fenced_code_blocks: true}
     )
   end
 
