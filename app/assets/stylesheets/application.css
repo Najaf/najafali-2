@@ -14,17 +14,29 @@
  *= require_self
  */
 
+body {
+  font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
+}
+
 article {
-  max-width: 600px;
+  max-width: 660px;
   margin: 0 auto 0 auto;
   line-height: 1.5em;
-  font-family: arial;
   font-size: 1.2em;
-  color: #eee;
+  color: #ddd;
 }
 
 article h1 {
-  text-decoration: underline;
+}
+
+.note-title {
+  margin-bottom: 5px;
+}
+
+.microtext {
+  opacity: 0.6;
+  font-size: .875rem;
+  line-height: 1.25rem;
 }
 
 body {
@@ -36,14 +48,17 @@ img {
 }
 
 a {
-  color: white;
-  text-decoration: none;
+  color: inherit;
+  text-decoration: inherit;
 }
 
 a:hover {
-  text-decoration: underline;
 }
 
 section a {
   text-decoration: underline;
+}
+
+li::marker {
+  color: #525252
 }

@@ -3,12 +3,12 @@
     &nbsp;
     <%= render 'shared/nav' %>
   </section>
-  <h2><%= @note.title %></h2>
+  <h2 class='note-title'><%= @note.title %></h2>
 
-  <em>
+  <div class='microtext'>
     <%= publish_date %>,
     <%= word_count %> words
-  </em>
+  </div>
 
   <section>
     <% if show_contents? %>
